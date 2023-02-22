@@ -74,11 +74,11 @@ export default function Home() {
            
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               {/* <AiFillTwitterCircle /> */}
-              <a href="" target="_blank"><AiFillMail/></a>
+              <a href=""><AiFillMail/></a>
               
-              <a href="https://www.linkedin.com/in/adrian-calleja-juniordeveloper/" target="_blank"><AiFillLinkedin /></a>
+              <a href="https://www.linkedin.com/in/adrian-calleja-juniordeveloper/"><AiFillLinkedin /></a>
               
-              <a href="https://github.com/adrii0113" target="_blank"><AiFillGithub/></a>
+              <a href="https://github.com/adrii0113"><AiFillGithub/></a>
               
 
             </div>
@@ -91,8 +91,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
+              Since 
               <span className="text-teal-500"> agencies </span>
               consulted for <span className="text-teal-500">startups </span>
               and collaborated with talanted people to create digital products
@@ -125,8 +124,7 @@ export default function Home() {
                 Code your dream project
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
+                Do 
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
@@ -153,12 +151,10 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
+              Since 
               <span className="text-teal-500"> agencies </span>
               consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+              and c
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I offer from a wide range of services, including brand design,
@@ -167,11 +163,10 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
-              <a href="https://socialapp-ruddy.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <a href="https://socialapp-ruddy.vercel.app/">
               <Image
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                alt=''
                 layout="responsive"
                 src={web1}
               />
@@ -180,8 +175,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover hover:hover08"
-                width={"100%"}
-                height={"100%"}
+                alt=''
                 layout="responsive"
                 src={web2}
               />
@@ -189,8 +183,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover hover:"
-                width={"100%"}
-                height={"100%"}
+                alt=''
                 layout="responsive"
                 src={web3}
               />
@@ -198,8 +191,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                alt=''
                 layout="responsive"
                 src={web4}
               />
@@ -207,8 +199,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                alt=''
                 layout="responsive"
                 src={web5}
               />
@@ -216,8 +207,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                alt=''
                 layout="responsive"
                 src={web6}
               />
