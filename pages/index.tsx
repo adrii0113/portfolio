@@ -6,7 +6,9 @@ import {
   AiFillGithub
 } from "react-icons/ai";
 
-import { Link } from "react-router-dom";
+
+
+import { motion } from "framer-motion"
 
 import deved from "../public/dev-ed-wave.png";
 
@@ -69,7 +71,22 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 py-10">
+          <motion.div initial={{
+            x: -500,
+            opacity:0,
+            scale:0.5,
+          }}
+          animate={{
+            x:0,
+            opacity:1,
+            scale:1,
+          }}
+          transition={{
+            duration:2.5,
+
+          }}
+          
+          className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Adrian Calleja Polanco
             </h2>
@@ -80,6 +97,7 @@ export default function Home() {
             
               Developer with less than 1 year of experience, actually learning and improving my development skills, scroll down to discover more about my projects
             </p>
+         
            
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               {/* <AiFillTwitterCircle /> */}
@@ -95,7 +113,7 @@ export default function Home() {
               <Image src={deved} layout="fill" objectFit="cover" alt='a'/>
 
             </div>
-          </div>
+          </motion.div>
         </section>
         <section>
           <div>
@@ -198,6 +216,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+    
     </div>
   );
 }
