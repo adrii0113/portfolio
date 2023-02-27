@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Typewriter } from 'react-simple-typewriter'
+import { Typewriter, Cursor, useTypewriter } from 'react-simple-typewriter'
 import { motion } from "framer-motion"
 import Image from "next/image";
 
@@ -14,17 +14,29 @@ import {
 
   import deved from "../public/dev-ed-wave.png";
 export default function Presentation(){
-
-
-    const handleType = (count: number) => {
-        // access word count number
-        console.log(count)
+  const handleType = (count: number) => {
+      // access word count number
+      console.log(count)
+  }
+    const handleDone = () => {
+      console.log(`Done after 5 loops!`)
     }
-    
-    
-      const handleDone = () => {
-        console.log(`Done after 5 loops!`)
+
+    const [text, count] = useTypewriter(
+      {
+        words : [
+          '<Hi/>', '<Im/>', '<Adrian/>', '<Im a junior software developer!/>'
+        ],
+        loop:6,
+            // Cursor,
+            // cursorStyle:'_',
+            typeSpeed:70,
+            deleteSpeed:50,
+            delaySpeed:1000,
+            onLoopDone:handleDone,
+            onType:handleType,
       }
+    )
     return (
 
         <div>
@@ -45,7 +57,7 @@ export default function Presentation(){
           
           className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-            <Typewriter
+            {/* <Typewriter
             words={['<Hi/>', '<Im/>', '<Adrian/>', '<Im a junior software developer!/>']}
             loop={6}
             cursor
@@ -55,7 +67,9 @@ export default function Presentation(){
             delaySpeed={1000}
             onLoopDone={handleDone}
             onType={handleType}
-          />
+          /> */}
+          <span>{text}</span>
+          <Cursor />
               {/* Adrian Calleja Polanco */}
             </h2>
             {/* <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
@@ -69,18 +83,17 @@ export default function Presentation(){
            
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               {/* <AiFillTwitterCircle /> */}
-              <a href=""><AiFillMail/></a>
+              <motion.div  whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}><a href=""><AiFillMail/></a></motion.div>
               
-              <a href="https://www.linkedin.com/in/adrian-calleja-juniordeveloper/"><AiFillLinkedin /></a>
-              
-              <a href="https://github.com/adrii0113"><AiFillGithub/></a>
-              
-
+              <motion.div  whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}> <a href="https://www.linkedin.com/in/adrian-calleja-juniordeveloper/"><AiFillLinkedin /></a></motion.div>
+              <motion.div  whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}><a href="https://github.com/adrii0113"><AiFillGithub/></a></motion.div>
+             
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+            <motion.div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            
               <Image src={deved} layout="fill" objectFit="cover" alt='a'/>
 
-            </div>
+            </motion.div>
           </motion.div>
            
         </div>
