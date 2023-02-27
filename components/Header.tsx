@@ -4,6 +4,9 @@ import {useState } from 'react'
 import { color, motion, useScroll, useSpring } from "framer-motion"
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import './../styles/individualfeatures.module.css'
+
+
+
 type Props = {}
 // import './../styles/individualfeatures.module.css';
 
@@ -55,7 +58,7 @@ export default function Header({}: Props) {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 hover:bg-black"
-                  href="#"
+                  href=""
                 >
                   Resume
                 </a>
