@@ -16,6 +16,7 @@ import Footer from '@/components/Footer';
 import Presentation from '@/components/Presentation';
 import Skills from '@/components/Skills';
 import Portfolio from "@/components/Portfolio";
+import Aboutme from "@/components/Aboutme";
 
 
 import { Inter } from '@next/font/google'
@@ -39,6 +40,7 @@ export default function Home() {
           {/* HEADER */}
           <Header></Header>
           {/* OWN INFORMATION SECTION */}
+          
           <Presentation></Presentation>
         </section>
 

@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 
 import Image from "next/image";
 import web1 from "../public/web1.png";
+import socialapp from "../public/socialapp.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
@@ -36,11 +37,11 @@ export default function Portofolio(){
               className="rounded-lg object-cover"
               alt=''
               layout="responsive"
-              src={web1}
+              src={socialapp}
             />
             </a>
           </motion.div>
-          <motion.div className="basis-1/3 flex-1" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          {/* <motion.div className="basis-1/3 flex-1" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <Image
               className="rounded-lg object-cover hover:hover08"
               alt=''
@@ -79,7 +80,7 @@ export default function Portofolio(){
               layout="responsive"
               src={web6}
             />
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 

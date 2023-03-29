@@ -2,6 +2,9 @@ import React from 'react';
 
 import { Typewriter, Cursor, useTypewriter } from 'react-simple-typewriter'
 import { motion } from "framer-motion"
+
+// COMPONENTS
+import Aboutme from './Aboutme';
 import Image from "next/image";
 
 import { BsFillMoonStarsFill } from "react-icons/bs";
@@ -31,6 +34,24 @@ export default function Presentation(){
             // Cursor,
             // cursorStyle:'_',
             typeSpeed:70,
+            deleteSpeed:50,
+            delaySpeed:1000,
+            onLoopDone:handleDone,
+            onType:handleType,
+      }
+    )
+
+    const [textPresentation, countPresentation] = useTypewriter(
+      {
+        words: [
+          'Developer with less than 1 year of experience,',
+          'actually learning and improving my development skills,',
+          'scroll down to discover more about my projects,'
+        ],
+        loop:6,
+            // Cursor,
+            // cursorStyle:'_',
+            typeSpeed:120,
             deleteSpeed:50,
             delaySpeed:1000,
             onLoopDone:handleDone,
@@ -75,10 +96,10 @@ export default function Presentation(){
             {/* <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               Junior fullstack developer.
             </h3> */}
-            {/* <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-            
-              Developer with less than 1 year of experience, actually learning and improving my development skills, scroll down to discover more about my projects
-            </p> */}
+            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+              {/* <Aboutme></Aboutme> */}
+              {/* {textPresentation} */}
+            </p>
          
            
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
