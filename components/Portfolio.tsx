@@ -43,13 +43,14 @@ export default function Portofolio(){
             </a>
           </motion.div>
           <motion.div className="basis-1/3 flex-1" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <a href="https://moviewebappclone.netlify.app/"></a>
+            <a href="https://moviewebappclone.netlify.app/">
             <Image
               className="rounded-lg object-cover hover:hover08"
               alt=''
               layout="responsive"
               src={moviefinder}
             />
+            </a>
           </motion.div>
           {/* <motion.div className="basis-1/3 flex-1" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <Image
