@@ -47,7 +47,7 @@ export default function Header({}: Props) {
 
           }}
           className="py-10 mb-12 flex justify-between dark:text-white">
-            <motion.h1 className="font-burtons text-xl" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>code portfolio</motion.h1>
+            <motion.h1 className="font-burtons text-xl" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>adrian portfolio</motion.h1>
             <ul className="flex items-center">
               <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <BsFillMoonStarsFill

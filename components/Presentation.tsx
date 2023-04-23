@@ -16,6 +16,7 @@ import {
   } from "react-icons/ai";
 
   import deved from "../public/dev-ed-wave.png";
+  import avatar from "../public/avataaars (1).svg";
 export default function Presentation(){
   const handleType = (count: number) => {
       // access word count number
@@ -28,7 +29,7 @@ export default function Presentation(){
     const [text, count] = useTypewriter(
       {
         words : [
-          '<Hi/>', '<Im/>', '<Adrian/>', '<Im a junior software developer!/>'
+          '<Hola!/>', '<Mi nombre es Adrian/>', '<Soy un desarrollador de software en constante aprendizaje!/>'
         ],
         loop:6,
             // Cursor,
@@ -44,7 +45,7 @@ export default function Presentation(){
     const [textPresentation, countPresentation] = useTypewriter(
       {
         words: [
-          'Developer with less than 1 year of experience,',
+          'Actualmente soy un desarrollador con menos de un ,',
           'actually learning and improving my development skills,',
           'scroll down to discover more about my projects,'
         ],
@@ -112,7 +113,7 @@ export default function Presentation(){
             </div>
             <motion.div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             
-              <Image src={deved} layout="fill" objectFit="cover" alt='a'/>
+              <Image src={avatar} layout="fill" objectFit="cover" alt='a'/>
 
             </motion.div>
           </motion.div>
