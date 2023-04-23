@@ -13,7 +13,11 @@ import web6 from "../public/web6.png";
 
 
 export default function Portofolio(){
+  
 
+  function openInNewTab (url: string) {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  }
     return(
 
         <section className="py-10">
@@ -32,8 +36,8 @@ export default function Portofolio(){
           </p> */}
         </div>
         <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-          <motion.div className="basis-1/3 flex-1 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <a href="https://socialapp-ruddy.vercel.app/">
+          <motion.div className="basis-1/3 flex-1 group relative items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            
             <Image
               className="rounded-lg h-full w-full object-cover transition-transform duration-500"
               alt=''
@@ -46,14 +50,19 @@ export default function Portofolio(){
               <h1 className="font-dmserif text-3xl font-bold text-white">Social App</h1>
              <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Página web realizada como proyecto final, la aplicación consiste en una red social en la que los usuarios tienen su propio perfil en el que pueden compartir tanto de forma escrita como mediante imágenes sus experiencias, a su vez, pueden comentar, reaccionar y seguir las diferentes publicaciones de otros usuarios a los que tengan en su lista de amigos, también esta implantado un sistema de chat en tiempo real creado mediante socket.io. 
               Este proyecto se realizó utilizando el stack MERN.</p>
-              <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Visitar web</button>
+              <div className="flex space-x-4">
+
+                <motion.button  onClick={()=>openInNewTab('https://socialapp-ruddy.vercel.app/')}className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Visitar web</motion.button>
+                <motion.button  onClick={()=>openInNewTab('https://github.com/adrii0113/socialapp')}className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Ver código</motion.button>
+              </div>
+              
             </div>
             
-            </a>
+            
             
           </motion.div>
-          <motion.div className="basis-1/3 flex-1 group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <a href="https://moviewebappclone.netlify.app/">
+          <motion.div className="basis-1/3 flex-1 group relative  items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            
             <Image
               className="rounded-lg object-cover hover:hover08"
               alt=''
@@ -64,9 +73,14 @@ export default function Portofolio(){
             <div className="absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
               <h1 className="font-dmserif text-3xl font-bold text-white">Movie clon</h1>
              <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Proyecto realizado con el objetivo de aprender nuevas tecnologías ( NextJs, tailwindcss y typescript), este proyecto consiste en una aplicación de búsqueda de contenido audiovisual, con una página principal en la que se muestran las películas y series de televisión más vistas en el momento, también tiene la funcionalidad de poder buscar películas y series para conocer toda la información sobre ellas.</p>
-              <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Visitar web</button>
+
+             <div className="flex space-x-4">
+
+              <motion.button  onClick={()=>openInNewTab('https://moviewebappclone.netlify.app/')}className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Visitar web</motion.button>
+              <motion.button  onClick={()=>openInNewTab('https://github.com/adrii0113/shoesuniverse')}className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Ver código</motion.button>
+             </div>
             </div>
-            </a>
+            
           </motion.div>
           {/* <motion.div className="basis-1/3 flex-1" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <Image
