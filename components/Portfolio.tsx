@@ -47,8 +47,8 @@ export default function Portofolio(){
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div className="absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-              <h1 className="font-dmserif text-3xl font-bold text-white">Social App</h1>
-             <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Página web realizada como proyecto final, la aplicación consiste en una red social en la que los usuarios tienen su propio perfil en el que pueden compartir tanto de forma escrita como mediante imágenes sus experiencias, a su vez, pueden comentar, reaccionar y seguir las diferentes publicaciones de otros usuarios a los que tengan en su lista de amigos, también esta implantado un sistema de chat en tiempo real creado mediante socket.io. 
+              <h1 className="mm:text-sm md:text-3xl font-dmserif text-3xl font-bold text-white">Social App</h1>
+             <p className="mb-3 text-lg  mm:text-xs sm:text-xs md:text-base italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Página web realizada como proyecto final, la aplicación consiste en una red social en la que los usuarios tienen su propio perfil en el que pueden compartir tanto de forma escrita como mediante imágenes sus experiencias, a su vez, pueden comentar, reaccionar y seguir las diferentes publicaciones de otros usuarios a los que tengan en su lista de amigos, también esta implantado un sistema de chat en tiempo real creado mediante socket.io. 
               Este proyecto se realizó utilizando el stack MERN.</p>
               <div className="flex space-x-4">
 
@@ -64,15 +64,16 @@ export default function Portofolio(){
           <motion.div className="basis-1/3 flex-1 group relative  items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             
             <Image
-              className="rounded-lg object-cover hover:hover08"
+              className="rounded-lg object-cover hover:hover08 w-16 md:w-32 lg:w-48"
               alt=''
               layout="responsive"
               src={moviefinder}
+              
             />
              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-            <div className="absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-              <h1 className="font-dmserif text-3xl font-bold text-white">Movie clon</h1>
-             <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Proyecto realizado con el objetivo de aprender nuevas tecnologías ( NextJs, tailwindcss y typescript), este proyecto consiste en una aplicación de búsqueda de contenido audiovisual, con una página principal en la que se muestran las películas y series de televisión más vistas en el momento, también tiene la funcionalidad de poder buscar películas y series para conocer toda la información sobre ellas.</p>
+            <div className="mm:my-12   absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 className="mm:text-sm md:text-3xl font-dmserif text-3xl font-bold text-white">Movie clon</h1>
+             <p className="mb-3 text-lg mm:text-xs sm:text-xs md:text-base italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Proyecto realizado con el objetivo de aprender nuevas tecnologías ( NextJs, tailwindcss y typescript), este proyecto consiste en una aplicación de búsqueda de contenido audiovisual, con una página principal en la que se muestran las películas y series de televisión más vistas en el momento, también tiene la funcionalidad de poder buscar películas y series para conocer toda la información sobre ellas.</p>
 
              <div className="flex space-x-4">
 

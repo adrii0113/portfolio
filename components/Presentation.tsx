@@ -79,6 +79,7 @@ export default function Presentation(){
           
           className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            
             {/* <Typewriter
             words={['<Hi/>', '<Im/>', '<Adrian/>', '<Im a junior software developer!/>']}
             loop={6}
@@ -111,7 +112,7 @@ export default function Presentation(){
               <motion.div  whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}><a href="https://github.com/adrii0113"><AiFillGithub/></a></motion.div>
              
             </div>
-            <motion.div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <motion.div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 " whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             
               <Image src={avatar} layout="fill" objectFit="cover" alt='a'/>
 

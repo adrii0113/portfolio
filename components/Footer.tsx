@@ -71,6 +71,8 @@ export default function Footer({}:Props){
             >My</a>
           
         </div>
+
+        
       </footer>
       </div>
     )

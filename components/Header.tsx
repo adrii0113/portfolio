@@ -4,7 +4,7 @@ import {useState } from 'react'
 import { color, motion, useScroll, useSpring } from "framer-motion"
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import './../styles/individualfeatures.module.css'
-
+import {cv} from './../public/cv.pdf'
 
 
 type Props = {}
@@ -56,12 +56,9 @@ export default function Header({}: Props) {
                 />
               </motion.li>
               <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 hover:bg-black"
-                  href=""
-                >
-                  Resume
-                </a>
+              {/* <a href = {cv} target = "_blank">Resume</a> */}
+                  
+                
               </motion.li>
             </ul>
           </motion.nav>
