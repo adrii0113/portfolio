@@ -83,15 +83,31 @@ export default function Portofolio(){
             </div>
             
           </motion.div>
-          {/* <motion.div className="basis-1/3 flex-1" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <motion.div className="basis-1/3 flex-1 group relative  items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            
             <Image
-              className="rounded-lg object-cover hover:"
+              className="rounded-lg object-cover hover:hover08 w-16 md:w-32 lg:w-48"
               alt=''
               layout="responsive"
-              src={web3}
+              src={moviefinder}
+              
             />
+             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div className="mm:my-12   absolute inset-0 flex translate-y-[50%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 className="mm:text-sm md:text-3xl font-dmserif text-3xl font-bold text-white">Movie clon</h1>
+             <p className="mb-3 text-lg mm:text-xs sm:text-xs md:text-base italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Proyecto realizado con el objetivo de aprender nuevas tecnologías ( NextJs, tailwindcss y typescript), este proyecto consiste en una aplicación de búsqueda de contenido audiovisual, con una página principal en la que se muestran las películas y series de televisión más vistas en el momento, también tiene la funcionalidad de poder buscar películas y series para conocer toda la información sobre ellas.</p>
+
+             <div className="flex space-x-4">
+
+              <motion.button  onClick={()=>openInNewTab('https://moviewebappclone.netlify.app/')}className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Visitar web</motion.button>
+              <motion.button  onClick={()=>openInNewTab('https://github.com/adrii0113/shoesuniverse')}className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>Ver código</motion.button>
+             </div>
+            </div>
+            
           </motion.div>
-          <motion.div className="basis-1/3 flex-1" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          
+          
+          {/* <motion.div className="basis-1/3 flex-1" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <Image
               className="rounded-lg object-cover"
               alt=''

@@ -112,11 +112,14 @@ export default function Presentation(){
               <motion.div  whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}><a href="https://github.com/adrii0113"><AiFillGithub/></a></motion.div>
              
             </div>
-            <motion.div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 " whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <div className='flex justify-center'>
+            <motion.div className=" bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 " whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             
               <Image src={avatar} layout="fill" objectFit="cover" alt='a'/>
 
             </motion.div>
+
+            </div>
           </motion.div>
            
         </div>
